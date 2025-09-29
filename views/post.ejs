@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        <% if (!userId) { %>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        <% } else { %>
+            <a href="/new">Create Post</a>
+            <a href="/logout">Logout</a>
+        <% } %>
+    </div>
+
+    <div class="container">
+        <div class="post-card">
+            <h1 class="page-title"><%= post.title %></h1>
+            <p><%= post.content %></p>
+            <p class="post-meta">By User <%= post.user_id %> | <%= new Date(post.created_at).toDateString() %></p>
+
+            <% if (userId && userId === post.user_id) { %>
+                <div style="margin-top: 15px;">
+                    <a class="btn" href="/post/<%= post.id %>/edit">Edit</a>
+                    <form action="/post/<%= post.id %>/delete" method="POST" style="display:inline;">
+                        <button type="submit" class="btn">Delete</button>
+                    </form>
+                </div>
+            <% } %>
+
+            <a href="/" class="btn" style="margin-top:10px; display:inline-block;">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

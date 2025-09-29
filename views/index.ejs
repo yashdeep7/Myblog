@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Left: Site title -->
+        <div class="nav-left">
+            <a href="/">My Blog</a>
+        </div>
+
+        <!-- Center: Search form -->
+        <div class="nav-center">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search posts..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Right: Login/Register or user actions -->
+        <div class="nav-right">
+            <% if (!userId) { %>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+                <% } else { %>
+                    <a href="/new">Create Post</a>
+                    <a href="/logout">Logout</a>
+                    <% } %>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="page-title">My Blog</h1>
+
+        <div class="posts-grid">
+            <% posts.forEach(post=> { %>
+                <div class="post-card">
+                    <h2><a href="/post/<%= post.id %>" class="read-more">
+                            <%= post.title %>
+                        </a></h2>
+                    <p>
+                        <%= post.content.substring(0, 100) %>...
+                    </p>
+                    <p class="post-meta">
+                        By <%= post.username %> | <%= new Date(post.created_at).toDateString() %>
+                    </p>
+
+                </div>
+                <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

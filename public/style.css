@@ -1,0 +1,190 @@
+/* Navbar */
+.navbar {
+    background: #222;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #007BFF;
+}
+
+/* Left section: site title */
+.nav-left a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-left a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Center section: search form */
+.nav-center form {
+    display: inline-flex;
+}
+
+.nav-center form input {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.nav-center form button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-center form button:hover {
+    background: #0056b3;
+}
+
+/* Right section: login/register links */
+.nav-right a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-right a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Make sections flex */
+.nav-left, .nav-center, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Center align the search form */
+.nav-center {
+    justify-content: center;
+}
+
+/* Right align login/register links */
+.nav-right {
+    justify-content: flex-end;
+}
+
+/* Keep rest of styling intact */
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Post Cards */
+.post-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.post-card h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-card h2 a:hover {
+    color: #007BFF;
+}
+
+.post-meta {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+    background: #0056b3;
+}
+
+/* Forms */
+.form-container {
+    background: #fff;
+    padding: 30px;
+    max-width: 450px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+}
+
+/* Page title and read more */
+.page-title {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 700;
+    color: #007BFF;
+}
+
+.read-more {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}

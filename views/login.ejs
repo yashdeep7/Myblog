@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Left: Site title -->
+        <div class="nav-left">
+            <a href="/">My Blog</a>
+        </div>
+
+        <!-- Center: Search form (optional on login page, can remove if not needed) -->
+        <div class="nav-center">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search posts..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Right: Login/Register or user actions -->
+        <div class="nav-right">
+            <% if (!userId) { %>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            <% } else { %>
+                <a href="/new">Create Post</a>
+                <a href="/logout">Logout</a>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1 class="page-title">Login</h1>
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

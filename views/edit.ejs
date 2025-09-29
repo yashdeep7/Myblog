@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="/">MyBlog</a>
+        </div>
+
+        <div class="nav-center">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search posts..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="nav-right">
+            <% if (!userId) { %>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            <% } else { %>
+                <a href="/new">Create Post</a>
+                <a href="/logout">Logout</a>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Edit Post</h1>
+            <form action="/post/<%= post.id %>/edit" method="POST">
+                <input type="text" name="title" value="<%= post.title %>" placeholder="Title" required>
+                
+                <textarea name="content" placeholder="Write your post here..." required><%= post.content %></textarea>
+                
+                <label>
+                    <input type="checkbox" name="is_public" <%= post.is_public ? 'checked' : '' %>> Public
+                </label>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
