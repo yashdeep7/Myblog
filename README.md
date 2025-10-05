@@ -33,7 +33,7 @@ A full-stack **web application** built with **Node.js**, **Express.js**, **EJS**
 ## Screenshots
 
 ### Homepage
-![Homepage](.home.png)
+![Homepage](./home.png)
 
 ### Login
 ![Post View](./login.png)
