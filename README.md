@@ -41,7 +41,7 @@ A full-stack **web application** built with **Node.js**, **Express.js**, **EJS**
 ### Create Post
 ![Create/ Post](./create.png)
 
-### Edit Post
+### Edit/Delete Post
 ![Edit/Post](./edit.png)
 
 ---
