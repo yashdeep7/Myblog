@@ -1,39 +1,50 @@
-# My Blog
+# My Blog Web Application
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![EJS](https://img.shields.io/badge/EJS-D1BEB0?style=flat&logo=ejs)
+[![Node.js](https://img.shields.io/badge/Node.js-16.x-green)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express.js-4.x-blue)](https://expressjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue)](https://www.postgresql.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A full-stack **Node.js** and **Express.js** web application using **PostgreSQL** and **EJS**, allowing users to register, log in, and create, edit, or delete blog posts. Supports public/private post visibility, session-based authentication, and search functionality.
+A full-stack **web application** built with **Node.js**, **Express.js**, **EJS**, and **PostgreSQL**. Users can register, log in, create, edit, and delete posts with public/private visibility. The app also supports post search and displays author information.
 
 ---
 
 ## Features
 
-- User registration, login, and logout  
-- Create, read, update, and delete posts (CRUD)  
-- Public and private post visibility  
-- Search posts by title or content  
-- Dynamic content rendering with EJS (author usernames, post metadata)  
-- Session-based authentication  
-- Responsive design  
+- User registration and login with **session-based authentication**
+- Create, edit, and delete posts
+- Set posts as **public or private**
+- Dynamic content rendering with **EJS templates**
+- Author usernames and post metadata displayed
+- Search posts by title or content
+- Responsive and clean UI
 
 ---
 
 ## Tech Stack
 
 - **Backend:** Node.js, Express.js  
+- **Frontend:** EJS templates, HTML, CSS  
 - **Database:** PostgreSQL  
-- **Templating:** EJS  
-- **Authentication:** express-session, bcrypt  
-- **Frontend:** HTML, CSS  
+- **Authentication:** Express-session  
 
 ---
 
-## Installation
+## Screenshots
 
-1. **Clone the repository**  
-```bash
-git clone https://github.com/yourusername/my-blog.git
-cd my-blog
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Post View
+![Post View](screenshots/post_view.png)
+
+### Create/Edit Post
+![Create/Edit Post](screenshots/create_edit.png)
+
+---
+
+License
+This project is licensed under the MIT License.
+
+Author
+Yashdeep Vats
