@@ -33,13 +33,16 @@ A full-stack **web application** built with **Node.js**, **Express.js**, **EJS**
 ## Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](.home.png)
 
-### Post View
-![Post View](screenshots/post_view.png)
+### Login
+![Post View](./login.png)
 
-### Create/Edit Post
-![Create/Edit Post](screenshots/create_edit.png)
+### Create Post
+![Create/ Post](./create.png)
+
+### Edit Post
+![Edit/Post](./edit.png)
 
 ---
 
