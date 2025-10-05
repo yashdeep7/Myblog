@@ -1,9 +1,9 @@
 # My Blog Web Application
 
-[![Node.js](https://img.shields.io/badge/Node.js-16.x-green)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express.js-4.x-blue)](https://expressjs.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue)](https://www.postgresql.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![EJS](https://img.shields.io/badge/EJS-D1BEB0?style=flat&logo=ejs)
 
 A full-stack **web application** built with **Node.js**, **Express.js**, **EJS**, and **PostgreSQL**. Users can register, log in, create, edit, and delete posts with public/private visibility. The app also supports post search and displays author information.
 
